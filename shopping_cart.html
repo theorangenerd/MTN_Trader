@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>MTN Trader - Shopping Cart</title>
+
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS Style -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+
+</head>
+
+<body class="shopping-cart-page">
+<div id="page"> <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-2 col-sm-3 col-xs-12 logo-block"> 
+            <!-- Header Logo -->
+            <div class="logo"> <a title="MTN Trader" href="index.html"><img alt="Magento Commerce" src="images/logo.png"> </a> </div>
+            <!-- End Header Logo --> 
+          </div>
+         
+            
+            
+            
+            <!-- Header Top Links -->
+            <div class="col-lg-7 col-md-2 col-sm-3 col-xs-12">
+            <div class="toplinks">
+              <div class="links">
+               
+               
+                
+<!--                <div class="cart-padding"><a href="shopping_cart.html"><span class="hidden-xs"><em class="fa fa-shopping-cart fa-2x"></em></span></a></div>
+-->                               <div class="myaccount"><button type="button" class="btn btn-mtn">Login</button></div>
+                                 <div class="myaccount"><button type="button" class="btn btn-mtn">Sign Up</button></div>
+
+              </div>
+            </div>
+            </div>
+            <!-- End Header Top Links --> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header --> 
+  
+  <!-- Navigation -->
+  
+  <nav>
+    
+  </nav>
+  <!-- end nav --> 
+  
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row no-gutter">
+        <div class=" col-md-3">
+         <div class="category-box">
+            <form id="search_mini_form" action="#" method="get">
+                           
+<select class="form-control selecter categorybox" name="category" id="search-category">
+<option selected="selected" value="">All Categories</option>
+<option value="Vehicles" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Vehicles - </option>
+<option value="Cars"> Cars </option>
+<option value="Commercial vehicles"> Commercial vehicles </option>
+<option value="Motorcycles"> Motorcycles </option>
+<option value="Motorcycle Equipment"> Car &amp; Motorcycle Equipment </option>
+<option value="Boats"> Boats </option>
+<option value="Vehicles"> Other Vehicles </option>
+<option value="House" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - House and Children - </option>
+<option value="Appliances"> Appliances </option>
+<option value="Inside"> Inside </option>
+<option value="Games"> Games and Clothing </option>
+<option value="Garden"> Garden </option>
+<option value="Multimedia" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Multimedia - </option>
+<option value="Telephony"> Telephony </option>
+<option value="Image"> Image and sound </option>
+<option value="Computers"> Computers and Accessories </option>
+<option value="Video"> Video games and consoles </option>
+<option value="Real" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Real Estate - </option>
+<option value="Apartment"> Apartment </option>
+<option value="Home"> Home </option>
+<option value="Vacation"> Vacation Rentals </option>
+<option value="Commercial"> Commercial offices and local </option>
+<option value="Grounds"> Grounds </option>
+<option value="Houseshares"> Houseshares </option>
+<option value="Other real estate"> Other real estate </option>
+<option value="Services" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Services - </option>
+<option value="Jobs"> Jobs </option>
+<option value="Job application"> Job application </option>
+<option value="Services"> Services </option>
+<option value="Price"> Price </option>
+<option value="Business"> Business and goodwill </option>
+<option value="Professional"> Professional equipment </option>
+<option value="dropoff" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Extra - </option>
+<option value="Other"> Other </option>
+</select></form>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="search-box">
+            <form id="search_mini_form" action="#" method="get">
+                           
+              <input id="search" type="text" name="q" value="Search entire store here..." class="searchbox" maxlength="128">
+</form>
+          </div>
+          </div>
+          
+          <div class="col-md-4">
+          <div class="location-box">
+            <form id="search_mini_form" action="#" method="get">
+                           
+              <input id="search" type="text" name="q" value="Location ..." class="searchbox" maxlength="128">
+              <button type="submit" title="Search" class="search-btn-bg" id="submit-button"><span>Search</span></button>
+            </form>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<section class="main-container col1-layout">
+    <div class="main container">
+      <div class="col-main">
+        <div class="cart wow bounceInUp animated">
+          <div class="page-title">
+            <h2>Shopping Cart</h2>
+          </div>
+          <div class="table-responsive">
+            <form method="post" action="#updatePost/">
+              <input type="hidden" value="Vwww7itR3zQFe86m" name="form_key">
+              <fieldset>
+                <table class="data-table cart-table" id="shopping-cart-table">
+                  <colgroup>
+                  <col width="1">
+                  <col>
+                  <col width="1">
+                  <col width="1">
+                  <col width="1">
+                  <col width="1">
+                  <col width="1">
+                  </colgroup>
+                  <thead>
+                    <tr class="first last">
+                      <th rowspan="1">Item</th>
+                      <th rowspan="1"><span class="nobr">Product Name</span></th>
+                      <th rowspan="1"></th>
+                      <th colspan="1" class="a-center"><span class="nobr">Unit Price</span></th>
+                      <th class="a-center" rowspan="1">Qty</th>
+                      <th colspan="1" class="a-center">Subtotal</th>
+                      <th class="a-center" rowspan="1">&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr class="first last">
+                      <td class="a-right last" colspan="50"><button class="button btn-continue" title="Continue Shopping" type="button"><span>Continue Shopping</span></button>
+                        <button class="button btn-update" title="Update Cart" name="update_cart_action" type="submit"><span>Update Cart</span></button>
+                        <button id="empty_cart_button" class="button btn-empty" title="Clear Cart" name="update_cart_action" type="submit"><span>Clear Cart</span></button></td>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr class="first odd">
+                      <td class="image"><a class="product-image" title="Sample Product" href="#"><img width="75" alt="Sample Product" src="products-images/product2.jpg"></a></td>
+                      <td class="table_width"><h2 class="product-name"> <a href="#">Sample Product</a> </h2></td>
+                      <td class="a-center"><a title="Edit item parameters" class="edit-bnt" href="#configure/id/15945/"></a></td>
+                      <td class="a-right"><span class="cart-price"> <span class="price">$70.00</span> </span></td>
+                      <td class="a-center movewishlist"><input maxlength="12" class="input-text qty" title="Qty" size="4" value="1" name="cart[15945][qty]"></td>
+                      <td class="a-right movewishlist"><span class="cart-price"> <span class="price">$70.00</span> </span></td>
+                      <td class="a-center last"><a class="button remove-item" title="Remove item" href="#"><span><span>Remove item</span></span></a></td>
+                    </tr>
+                    <tr class="last even">
+                      <td class="image"><a class="product-image" title="Sample Product" href="#"><img width="75" alt="Sample Product" src="products-images/product2.jpg"></a></td>
+                      <td><h2 class="product-name"> <a href="#">Sample Product</a> </h2></td>
+                      <td class="a-center"><a title="Edit item parameters" class="edit-bnt" href="#configure/id/15946/"></a></td>
+                      <td class="a-right"><span class="cart-price"> <span class="price">$7.38</span> </span></td>
+                      <td class="a-center movewishlist"><input maxlength="12" class="input-text qty" title="Qty" size="4" value="1" name="cart[15946][qty]"></td>
+                      <td class="a-right movewishlist"><span class="cart-price"> <span class="price">$7.38</span> </span></td>
+                      <td class="a-center last"><a class="button remove-item" title="Remove item" href="#"><span><span>Remove item</span></span></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
+            </form>
+          </div>
+          <!-- BEGIN CART COLLATERALS -->
+          <div class="cart-collaterals row">
+<div class="totals col-sm-12">
+              <h3>Shopping Cart Total</h3>
+              <div class="inner">
+                <table class="table shopping-cart-table-total" id="shopping-cart-totals-table">
+                  <colgroup>
+                  <col>
+                  <col width="1">
+                  </colgroup>
+                  <tfoot>
+                    <tr>
+                      <td colspan="1" class="a-left" style=""><strong>Grand Total</strong></td>
+                      <td class="a-right" style=""><strong><span class="price">$77.38</span></strong></td>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td colspan="1" class="a-left" style=""> Subtotal </td>
+                      <td class="a-right" style=""><span class="price">$77.38</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="checkout">
+                  <li>
+                  <div class="pull-right">
+                    <button class="button btn-proceed-checkout" title="Proceed to Checkout" type="button"><span>Proceed to Checkout</span></button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--inner--> 
+              
+            </div>
+          </div>
+          
+          <!--cart-collaterals--> 
+          
+        </div>
+</div>
+    </div>
+  </section>
+  <!-- Footer -->  <footer class="footer">
+    
+        <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="footer-column pull-left">
+              <ul class="links">
+                
+                <li><a href="#.html" title="Contact Us">Contact Us</a></li>
+              </ul>
+              
+              
+            </div>
+            <div class="footer-column pull-left">
+              <ul class="links">
+                
+                <li><a href="#.html" title="Contact Us">Privacy Policy</a></li>
+              </ul>
+              
+              
+            </div>
+            <div class="footer-column pull-left">
+              <ul class="links">
+                
+                <li><a href="#.html" title="Contact Us">Terms of use</a></li>
+              </ul>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-xs-12 coppyright">&copy; 2016 MTN TRADER. All Rights Reserved.</div>
+          <div class="col-sm-7 col-xs-12 company-links">
+            <ul class="links">
+              <li><a href="#" title="Powered By SMSGh">Powered By SMSGH</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- End Footer --> 
+
+<!-- JavaScript --> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+</body>
+</html>
